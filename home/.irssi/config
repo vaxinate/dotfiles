@@ -38,8 +38,7 @@ chatnets = {
 };
 
 channels = (
-  { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "silc"; chatnet = "silc"; autojoin = "No"; },
+  { name = "#iz"; chatnet = "1606inc"; autojoin = "yes"; }
   { name = "#general"; chatnet = "nolaSlack"; autojoin = "yes"; }
 );
 
