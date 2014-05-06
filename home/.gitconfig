@@ -1,0 +1,10 @@
+[user]
+	name = Adam Clarke
+	email = adamclarkewastaken@gmail.com
+[rerere]
+	enabled = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[core]
+	excludesfile = ~/.gitignore_global
