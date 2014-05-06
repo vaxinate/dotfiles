@@ -28,6 +28,7 @@ Bundle 'octol/vim-cpp-enhanced-highlight'
 
 filetype plugin indent on
 
+set noswapfile
 set number
 set tabstop=2 shiftwidth=2 expandtab
 set guifont=Ubuntu\ Mono:h18
