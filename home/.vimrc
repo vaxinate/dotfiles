@@ -1,39 +1,39 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'mileszs/ack.vim'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Floobits/floobits-vim'
-Bundle 'digitaltoad/vim-jade'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vimoutliner/vimoutliner'
-Bundle 'tpope/vim-liquid'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tclem/vim-arduino'
-Bundle 'sudar/vim-arduino-syntax'
-Bundle 'octol/vim-cpp-enhanced-highlight'
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'mileszs/ack.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'marcweber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vimoutliner/vimoutliner'
+Plugin 'tpope/vim-liquid'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tclem/vim-arduino'
+Plugin 'sudar/vim-arduino-syntax'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
-filetype plugin indent on
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 set noswapfile
 set number
 set nowrap
 set hlsearch
 set tabstop=2 shiftwidth=2 expandtab
-set guifont=Ubuntu\ Mono:h18
+set guifont=Fantasque\ Sans\ Mono:h14
 set list listchars=trail:.
 set colorcolumn=80
 set foldmethod=indent
