@@ -3,7 +3,7 @@ servers = (
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
   {
     address = "1606inc.com";
-    chatnet = "1606inc"
+    chatnet = "1606inc";
     port = "8002";
     password = "vaxinate:holdontobutts";
     use_ssl = "yes";
@@ -38,7 +38,7 @@ chatnets = {
 };
 
 channels = (
-  { name = "#iz"; chatnet = "1606inc"; autojoin = "yes"; }
+  { name = "#iz"; chatnet = "1606inc"; autojoin = "yes"; },
   { name = "#general"; chatnet = "nolaSlack"; autojoin = "yes"; }
 );
 
