@@ -24,6 +24,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tclem/vim-arduino'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()            " required
 filetype plugin indent on    " required
