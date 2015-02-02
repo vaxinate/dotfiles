@@ -24,7 +24,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tclem/vim-arduino'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'dkprice/vim-easygrep'
+Plugin 'wakatime/vim-wakatime'
+Plugin 'mtscout6/vim-cjsx'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -34,7 +36,7 @@ set number
 set nowrap
 set hlsearch
 set tabstop=2 shiftwidth=2 expandtab
-set guifont=Fantasque\ Sans\ Mono:h14
+set guifont=Fantasque\ Sans\ Mono:h18
 set list listchars=trail:.
 set colorcolumn=80
 set foldmethod=indent

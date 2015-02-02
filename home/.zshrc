@@ -8,11 +8,14 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="cloud"
 
+plugins=(rails git ruby)
+
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="mvim ~/.zshrc"
 alias be="bundle exec"
 alias dir="ls -lah"
+alias heroky="heroku"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -48,7 +51,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/adam/.nvm/v0.8.25/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=$PATH:/Users/adam/.nvm/v0.8.25/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/adam/AndroidDev/sdk/platform-tools:/Users/adam/AndroidDev/sdk/tools
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s /Users/adam/.nvm/nvm.sh ]] && . /Users/adam/.nvm/nvm.sh # This loads NVM
