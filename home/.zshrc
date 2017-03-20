@@ -1,4 +1,4 @@
-source /opt/boxen/env.sh
+# source /opt/boxen/env.sh
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -6,16 +6,20 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cloud"
-
-plugins=(rails git ruby)
+ZSH_THEME="bullet-train"
 
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="mvim ~/.zshrc"
+alias rezsh="source ~/.zshrc"
 alias be="bundle exec"
+alias berc="bundle exec rails console"
+alias bers="bundle exec rails server"
 alias dir="ls -lah"
 alias heroky="heroku"
+alias venv="source ./env/bin/activate"
+alias dj="python manage.py"
+alias djdbg="python -m pdb manage.py"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -30,7 +34,7 @@ alias heroky="heroku"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+#DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
 # DISABLE_CORRECTION="true"
@@ -46,12 +50,13 @@ alias heroky="heroku"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(rails git git-extras ruby)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/Users/adam/.nvm/v0.8.25/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/adam/AndroidDev/sdk/platform-tools:/Users/adam/AndroidDev/sdk/tools
+export BUNDLER_EDITOR=atom
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-[[ -s /Users/adam/.nvm/nvm.sh ]] && . /Users/adam/.nvm/nvm.sh # This loads NVM
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
