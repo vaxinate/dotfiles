@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="bullet-train"
 
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -55,7 +55,7 @@ plugins=(rails git git-extras ruby)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/adam/.nvm/v0.8.25/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/adam/AndroidDev/sdk/platform-tools:/Users/adam/AndroidDev/sdk/tools
+export PATH=$PATH:/Users/adam/.nvm/v0.8.25/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/adam/AndroidDev/sdk/platform-tools:/Users/adam/AndroidDev/sdk/tools:/Applications/Postgres.app/Contents/Versions/latest/bin
 export BUNDLER_EDITOR=atom
 
 eval "$(rbenv init -)"
