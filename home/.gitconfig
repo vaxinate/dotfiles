@@ -1,5 +1,5 @@
 [user]
-	name = Adam Clarke
+	name = vaxinate
 	email = adamclarkewastaken@gmail.com
 [rerere]
 	enabled = true
@@ -8,3 +8,15 @@
 	smudge = git-media-smudge %f
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = vim
+[github]
+	user = vaxinate
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

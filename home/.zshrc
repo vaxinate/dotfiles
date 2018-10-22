@@ -20,6 +20,17 @@ alias heroky="heroku"
 alias venv="source ./env/bin/activate"
 alias dj="python manage.py"
 alias djdbg="python -m pdb manage.py"
+alias kcp="kubectl --context=kubernetes.prod.revelry.net"
+alias kcs="kubectl --context=kubernetes.stage.revelry.net"
+alias kcv="kubectl --context=kubernetes.dev.revelry.net"
+alias tskcp="kubectl --context=kube.prod.tssands.com"
+alias phelm="helm --kube-context=kubernetes.prod.revelry.net"
+alias shelm="helm --kube-context=kubernetes.stage.revelry.net"
+alias vhelm="helm --kube-context=kubernetes.dev.revelry.net"
+
+function klogs () {
+   kubectl logs --context $1 $2 -n $3
+}
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -55,8 +66,28 @@ plugins=(rails git git-extras ruby)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/adam/.nvm/v0.8.25/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/adam/AndroidDev/sdk/platform-tools:/Users/adam/AndroidDev/sdk/tools:/Applications/Postgres.app/Contents/Versions/latest/bin
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin:/Users/adam/bin
 export BUNDLER_EDITOR=atom
 
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
+PATH="/Users/adam/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/adam/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/adam/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/adam/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/adam/perl5"; export PERL_MM_OPT;
+
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+export ANDROID_HOME='/Users/adam/Library/Android/sdk'
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+
+# eval "$(rbenv init -)"
+# eval "$(nodenv init -)"
+
+PATH="/Applications/Postgres.app/Contents/Versions/current/bin${PATH:+:${PATH}}"; export PATH;
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+
+export PATH="/usr/local/opt/opencv@2/bin:$PATH"
