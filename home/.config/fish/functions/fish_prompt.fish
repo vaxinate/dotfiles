@@ -6,5 +6,5 @@ function fish_prompt
 
     # Main
     echo (set_color cyan)(__kube_prompt)(set_color normal)
-    echo (set_color cyan)(prompt_pwd) (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
+    echo (set_color grey)(prompt_pwd) (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
 end
