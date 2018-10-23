@@ -4,3 +4,4 @@ set -x EDITOR "atom -w"
 set -x BUNDLER_EDITOR $EDITOR
 set -x ANDROID_SDK_ROOT "/usr/local/share/android-sdk"
 set -x ANDROID_HOME '/Users/adam/Library/Android/sdk'
+set -g __fish_git_prompt_showdirtystate 1
